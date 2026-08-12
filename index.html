@@ -1,14 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primera web en la nube</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi primera web en la nube</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Hola, soy Sebastian</h1>
-  <p>Estudiante de Ingeniería de Sistemas · Electiva Cloud Computing.</p>
-  <p>Esta página está desplegada en la nube.</p>
+
+<body class="min-h-screen bg-black text-white">
+
+    <!-- Barra de navegación -->
+    <nav class="border-b border-gray-800 bg-black/90">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+            <h2 class="text-xl font-bold text-purple-400">
+                Sebastian.dev
+            </h2>
+
+            <span class="text-sm text-gray-400">
+                Cloud Computing
+            </span>
+        </div>
+    </nav>
+
+
+    <!-- Contenido principal -->
+    <main class="flex min-h-[85vh] items-center justify-center px-6">
+
+        <div class="w-full max-w-3xl text-center">
+
+            <!-- Etiqueta -->
+            <div class="mb-6 inline-block rounded-full border border-purple-500/30 bg-purple-500/10 px-4 py-2">
+                <span class="text-sm font-medium text-purple-300">
+                    ☁️ Mi primera web en la nube
+                </span>
+            </div>
+
+            <!-- Título -->
+             <div class="mb-8 flex justify-center">
+    <img
+        src="img/fabis.jpeg"
+        alt="Foto de Sebastian"
+        class="h-32 w-32 rounded-full border-4 border-purple-500 object-cover shadow-lg shadow-purple-500/20"
+    >
+</div>
+            <h1 class="text-5xl font-extrabold tracking-tight sm:text-6xl">
+                Hola, soy
+                <span class="text-purple-400">
+                    Sebastian
+                </span>
+            </h1>
+
+            <!-- Descripción -->
+            <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
+                Estudiante de Ingeniería de Sistemas
+                <span class="text-purple-400">·</span>
+                Electiva Cloud Computing.
+            </p>
+
+            <p class="mx-auto mt-3 max-w-2xl text-gray-500">
+                Esta página está desplegada en la nube y representa
+                mi primer proyecto web utilizando tecnologías cloud.
+            </p>
+
+
+            <!-- Tarjetas -->
+            <div class="mt-12 grid gap-5 sm:grid-cols-3">
+
+                <div class="rounded-2xl border border-gray-800 bg-gray-950 p-6 transition duration-300 hover:-translate-y-1 hover:border-purple-500/50">
+                    <div class="text-3xl">☁️</div>
+
+                    <h3 class="mt-4 font-semibold text-white">
+                        Cloud
+                    </h3>
+
+                    <p class="mt-2 text-sm text-gray-500">
+                        Página desplegada en la nube.
+                    </p>
+                </div>
+
+
+                <div class="rounded-2xl border border-gray-800 bg-gray-950 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-500/50">
+                    <div class="text-3xl">💻</div>
+
+                    <h3 class="mt-4 font-semibold text-white">
+                        Desarrollo
+                    </h3>
+
+                    <p class="mt-2 text-sm text-gray-500">
+                        Creada utilizando HTML y Tailwind CSS.
+                    </p>
+                </div>
+
+
+                <div class="rounded-2xl border border-gray-800 bg-gray-950 p-6 transition duration-300 hover:-translate-y-1 hover:border-purple-500/50">
+                    <div class="text-3xl">🚀</div>
+
+                    <h3 class="mt-4 font-semibold text-white">
+                        Proyecto
+                    </h3>
+
+                    <p class="mt-2 text-sm text-gray-500">
+                        Mi primera experiencia con Cloud Computing.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Botón -->
+            <div class="mt-10">
+                <a
+                    href="#"
+                    class="inline-block rounded-xl bg-purple-600 px-6 py-3 font-semibold text-white shadow-lg shadow-purple-600/20 transition duration-300 hover:bg-purple-500 hover:shadow-purple-500/30"
+                >
+                    Conocer más
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-900 py-6 text-center">
+        <p class="text-sm text-gray-600">
+            © 2026 Sebastian · Ingeniería de Sistemas
+        </p>
+    </footer>
+
 </body>
 </html>
